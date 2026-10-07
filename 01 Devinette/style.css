@@ -1,9 +1,10 @@
 .nombre {
-    width: 50px;
-    padding: 2px 2px 3em;
+    width: 4em;
+    padding: 10px;
     border: 1px solid black;
-    margin: auto;
-    vertical-align: center;
+    margin: 1em;
+    text-align: center;
+    display: inline-grid;
 }
 
 .cache {
@@ -18,4 +19,12 @@
 .succes {
     color: #009527;
     background-color : #a9e9aa;
+}
+
+.nombre.cache {
+    display: none;
+}
+
+.nombres {
+    width: 65em;
 }

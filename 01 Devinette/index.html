@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Devine</title>
     <meta name="description" content="Exercice inspiré de l'exercice de débogage du MDN">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
   </head>
-  <body>
-    <h1>Devine le nombre </h1>
+  <body class="container">
+    <h1 class="mt-5">Devine le nombre </h1>
     <p>Un nombre aléatoire entre 1 et 100 a été choisi. Essaie de le trouver en moins de dix essais.
        Pour faciliter un peu les choses, nous te dirons à chaque fois si le nombre soumis est plus petit ou plus grand
        que le
@@ -23,7 +24,7 @@
         <button>Soumettre</button>
       </div>
     </section>
-    <div class="nombres">
+    <div class="nombres mt-3">
       <div id="1" class="nombre">001</div>
       <div id="2" class="nombre">002</div>
       <div id="3" class="nombre">003</div>
