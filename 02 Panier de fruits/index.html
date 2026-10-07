@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier de fruits</title>
+  <meta name="description" content="Un panier d'achats pour des fruits frais">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<main>
+<header>
+  <nav>
+    <ul>
+      <li>
+        Exercice S7
+      </li>
+      <li>
+        Élément 1
+        <ul>
+          <li><a href="#" class="active">Sous-élément 1</a></li>
+          <li><a href="#">Sous-élément 2</a></li>
+        </ul>
+      </li>
+      <li>
+        Élément 2
+        <ul>
+          <li><a href="#" class="active">Sous-élément 1</a></li>
+          <li><a href="#">Sous-élément 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Acheter des fruits</h2>
+    <table class="bandes">
+      <caption>Nos tarifs de l’automne 2021</caption>
+      <thead>
+      <tr>
+        <th scope="col">Fruit</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Poids du sac</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Pommes</th>
+        <td>13,50 $</td>
+        <td>10 lbs</td>
+      </tr>
+      <tr>
+        <th scope="row">Poires</th>
+        <td>20,00 $</td>
+        <td>12 lbs</td>
+      </tr>
+      <tr>
+        <th scope="row">Prunes</th>
+        <td>22,00 $</td>
+        <td>15 lbs</td>
+      </tr>
+      </tbody>
+    </table>
+    <button id="btn_pommes">Acheter un sac de pommes</button>
+    <button id="btn_poires">Acheter un sac de poires</button>
+    <button id="btn_prunes">Acheter un sac de prunes</button>
+  </section>
+  <section>
+    <h2>Vos achats</h2>
+    <table>
+      <caption>Facture détaillée</caption>
+      <thead>
+      <tr>
+        <th>Fruit</th>
+        <th>Quantité (sacs)</th>
+        <th>Poids</th>
+        <th>Prix</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Pommes</th>
+        <td id="qte_pommes">0</td>
+        <td class="poids" id="poids_pommes">0</td>
+        <td class="prix" id="prix_pommes">0.00</td>
+      </tr>
+      <tr>
+        <th scope="row">Poires</th>
+        <td id="qte_poires">0</td>
+        <td class="poids" id="poids_poires">0</td>
+        <td class="prix" id="prix_poires">0.00</td>
+      </tr>
+      <tr>
+        <th scope="row">Prunes</th>
+        <td id="qte_prunes">0</td>
+        <td class="poids" id="poids_prunes">0</td>
+        <td class="prix" id="prix_prunes">0.00</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td id="qte_total">0</td>
+        <td class="poids" id="poids_total">0</td>
+        <td class="prix" id="prix_total">0.00</td>
+      </tr>
+      </tfoot>
+    </table>
+  </section>
+</main>
+</html>

@@ -1,0 +1,139 @@
+/*---------------------------------
+Navigation
+-----------------------------------
+ */
+
+nav {
+    background-color : #d66d3e;
+    color : white;
+}
+
+nav ul {
+    margin : 0;
+    padding : 0;
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+/*---------------------------------
+Liste de premier niveau
+*/
+nav > ul > li:first-child {
+    font-weight: bold;
+    font-size: 1.15em;
+    margin-right : 1em;
+}
+
+nav > ul li {
+    display : inline-block;
+    position :relative;
+}
+
+/*---------------------------------
+Liste de deuxième niveau
+*/
+nav ul ul {
+    display :none;
+    padding : 0;
+    width: max-content;
+    margin-top : 1em;
+    border : 1px solid #efefef;
+}
+
+nav li:hover ul {
+    display : block;
+    background-color : white;
+}
+
+nav li li:hover{
+    background-color: #e8b59f;
+}
+
+nav li li {
+    display : initial;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+ Styles généraux
+--------------------------------------------------------------------------------------------------------*/
+body {
+    line-height: 1.5;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1{
+    color : #873815;
+}
+
+h2, table caption {
+    color : #914727;
+    font-weight: bold;
+}
+
+button {
+    border: 0;
+    border-radius: 1.5em;
+    color: #ffffff;
+    background-color: #d66d3e;
+    padding: 0.5em 1em;
+    display : block;
+    margin : 1em;
+}
+
+footer {
+    position: relative;
+    margin-top: 5em;
+}
+
+footer button {
+    background-color: #323131;
+    position : absolute;
+    right:0;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+ Tableaux
+--------------------------------------------------------------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    margin-bottom : 2em;
+}
+
+thead, table {
+    border-bottom : 1px solid #e8b59f;
+}
+
+tbody th {
+    text-align: left;
+}
+
+thead th, tbody td, tfoot td {
+    text-align : center;
+}
+
+td, th {
+    padding: .25em 2em;
+}
+
+/* Tableaux à bandes
+--------------------------------------------------------------------------------------------------------*/
+table.bandes tbody tr:nth-child(even), tfoot {
+    background-color: #f4dcd1;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+ Autres classes
+--------------------------------------------------------------------------------------------------------*/
+.prix::after{
+    content: " $";
+}
+.poids::after{
+    content: " lbs";
+}
+
+
+

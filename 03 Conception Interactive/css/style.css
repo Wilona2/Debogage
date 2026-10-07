@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------
+Mise en forme générale de l'application.
+La mise en forme des formulaires ne fait pas partie de cette
+feuille de style.
+-----------------------------------------------------------------*/
+
+header {
+	/* Insérer une image de fond de votre choix ici */
+	background-image: url("../imgs/image.jpg");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: cover;
+	font-family: "Dancing Script", cursive;
+	width: 100%;
+}
+
+.circle {
+	display : inline-block;
+	width : 2.5em;
+	height: 2.5em;
+	border : 1px solid #CCCCCC;
+	border-radius : 2em;
+}
+
+.bg-texte{
+	background-color : black;
+}
+
+.bg-fond{
+	background-color : white;
+}
+
+.bg-accent{
+	background-color : #1d7e71;
+}
+
+.color-texte {
+	color: black;
+}
+
+.color-fond {
+	color: white;
+}
+
+.color-accent {
+	color : #1d7e71;
+}
+
+

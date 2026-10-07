@@ -1,0 +1,21 @@
+/*---------------------------------------------------------------
+Feuille de style pour la mise en forme des formulaires
+-----------------------------------------------------------------*/
+
+input[type=color]{
+    display : inline-block;
+    width : 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    margin-right : 1em;
+}
+
+/* Traitement des erreurs dans le formulaire
+-----------------------------------------------------------------*/
+.error{
+    border : 1px solid darkred;
+    background-color : rgba(139,0,0,0.1);
+    color : darkred;
+    padding : 1em;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Conception interactive d'un site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Un site qui permet au client de faire ses choix de conception">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Conception interactive de l'apparence d'un site</h1>
+    </header>
+    <!-- Apparence du site (aperçu de l'impact des choix) -->
+    <p>Apparence</p>
+    <p>Couleurs</p>
+    <div class="circle bg-texte" title="couleur du texte"></div>
+    <div class="circle bg-fond" title="couleur du fond"></div>
+    <div class="circle bg-accent" title="couleur accent"></div>
+    <p>Boutons</p>
+    <button class="">Appuyer ici</button>
+    <button class="bg-accent color-fond">Appuyer plutôt ici</button>
+    <p>Typographie</p>
+    <div class="bg-fond">
+      <p class="color-texte">Entête du texte</p>
+      <p class="color-texte">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Quam quisque id diam vel quam elementum.
+        In nisl nisi scelerisque eu ultrices vitae auctor eu. Bibendum enim facilisis gravida neque. Neque gravida
+        in fermentum et sollicitudin. Justo nec ultrices dui sapien. Ac ut consequat semper viverra nam libero
+        justo. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.
+        <!-- Cet extrait du texte doit être mis en évidence (strong) et avoir la classe color-accent -->
+        <strong class="color-accent">Pharetra sit amet aliquam id diam.</strong> Adipiscing elit pellentesque
+        habitant morbi tristique senectus. Nunc lobortis mattis aliquam faucibus. Tempus quam pellentesque nec nam
+        aliquam. Aliquet lectus proin nibh nisl condimentum id. In nulla posuere sollicitudin aliquam ultrices
+        sagittis orci a scelerisque. Duis at consectetur lorem donec massa. Ut venenatis tellus in metus vulputate
+        eu scelerisque. Lacus vel facilisis volutpat est. Dolor sit amet consectetur adipiscing elit ut aliquam.
+        Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Enim sit amet venenatis urna cursus
+        eget nunc scelerisque viverra.</p>
+    </div>
+    <!-- Choix de l'apparence à l'aide d'un formulaire -->
+    <p>Modification de l'apparence</p>
+    <p>Modifier ici l'apparence de votre site. Vous verrez les modification apparaître immédiatement dans la colonne
+       de gauche, mais n'oubliez pas de nous soumettre vos choix.</p>
+    <form>
+      <!-- Choix des couleurs -->
+      <p>Choix des couleurs</p>
+      <p>Couleur du texte :</p>
+      <input type="color" name="texte" id="texte">
+      <p>Couleur de fond : </p>
+      <input type="color" name="fond" id="fond" value="#ffffff">
+      <p>Couleur d'accent :</p>
+      <input type="color" name="accent" id="accent" value="#1d7e71">
+      <p>Attention au choix de couleur. Trois couleurs différentes devraient être sélectionnées pour assurer la
+         lisibilité du site.</p>
+      <!-- Apparence des boutons -->
+      <p>Apparence des boutons</p>
+      <!-- Typographie -->
+      <p>Typographie</p>
+      <p>Police de caractères des paragraphes :
+         <!-- Liste de choix : sans-serif, serif, cursive, monospace, fantasy --></p>
+      <p>Couleur des entêtes :</p>
+    </form>
+    <footer>
+      <address>
+        <ul>
+          <li><a href="tel:+18195555555"><i class="material-icons">phone</i>(819) 555-5555</a></li>
+          <li><a href="mailto:exemple@exemple.com"><i class="material-icons">mail_outline</i>exemple@exemple.com</a>
+          </li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
