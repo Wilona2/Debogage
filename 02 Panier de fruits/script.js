@@ -26,7 +26,7 @@ function Panier(nbPommes, nbPoires, nbPrunes) {
  */
 function Sacsfruit(type = 'fruits', prix = 0, poids = 0, qte = 0){
     this.type = type;
-    this.prix = poids;
+    this.prix = prix; // poids --> prix
     this.poids = poids;
     this.qte = qte;
 }
@@ -55,7 +55,7 @@ function getTotalFruit(fruit, propriete = "qte") {
 function getTotal(propriete = "qte") {
     let total = 0;
     for (let fruit in fruits) {
-        total += getTotalFruit(fruit, propriete);
+        total += getTotalFruit(fruits[fruit], propriete); //fruit est l'index, pas un élément de la liste
     }
     return total;
 }
